@@ -5,6 +5,7 @@ import os
 import threading
 
 class FileClientApp:
+
     def __init__(self, master):
         self.master = master
         master.title("Two-Way TCP File Client")
