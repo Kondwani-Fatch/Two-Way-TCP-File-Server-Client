@@ -172,7 +172,7 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = FileClientApp(root)
 
-    # Center the window after it's fully laid out
+    # Center the window after it's fully la
     root.update_idletasks()
     width = root.winfo_width()
     height = root.winfo_height()
