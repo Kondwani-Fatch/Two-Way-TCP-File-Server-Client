@@ -87,8 +87,9 @@ class FileClientApp:
                         return
                     elif header.startswith("SIZE|"):
                         filesize = int(header.split('|')[1])
-                    else:
-                        self.set_status("Unexpected server response.", "red")
+
+                    elif not header:
+                        self.set_status("No response from server. Please check the server IP/port.", "red")
                         self.toggle_buttons("normal")
                         return
 
